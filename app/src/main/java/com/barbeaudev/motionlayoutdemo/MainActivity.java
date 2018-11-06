@@ -3,26 +3,40 @@ package com.barbeaudev.motionlayoutdemo;
 import android.animation.LayoutTransition;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
+
+import com.google.android.material.card.MaterialCardView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "MotionLayoutDemo";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        MaterialCardView cardView = findViewById(R.id.motion_card_view);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            ((ViewGroup) findViewById(R.id.motion_card_view)).getLayoutTransition()
+            cardView.getLayoutTransition()
                     .enableTransitionType(LayoutTransition.CHANGING);
+            Log.d(TAG, "TransitionType CHANGING enabled - " + cardView.getLayoutTransition().isTransitionTypeEnabled(LayoutTransition.CHANGING));
         }
+
+//        findViewById(R.id.save).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                MotionLayout motionLayout = findViewById(R.id.motion_layout);
+//                motionLayout.transitionToEnd();
+//            }
+//        });
     }
 
     @Override

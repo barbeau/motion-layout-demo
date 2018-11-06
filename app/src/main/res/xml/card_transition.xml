@@ -16,10 +16,10 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@+id/collapsed"
         motion:constraintSetStart="@+id/expanded"
-        motion:duration="250"
-        motion:interpolator="easeInOut">
+        motion:constraintSetEnd="@+id/collapsed"
+        motion:duration="850"
+        motion:interpolator="linear">
         <OnClick
             motion:target="@id/save"
             motion:mode="toggle" />
@@ -74,21 +74,10 @@
     <ConstraintSet android:id="@+id/collapsed">
         <Constraint
             android:id="@id/set_ground_truth1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
-            android:visibility="gone"></Constraint>
+            android:visibility="gone" />
         <Constraint
             android:id="@id/set_ground_truth2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:visibility="gone"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/set_ground_truth1"></Constraint>
+            android:visibility="gone" />
         <Constraint
             android:id="@id/ground_truth_lat"
             android:layout_width="100dp"
