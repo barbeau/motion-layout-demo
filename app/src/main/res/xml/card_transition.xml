@@ -110,7 +110,6 @@
             motion:layout_constraintTop_toTopOf="parent"></Constraint>
         <Constraint
             android:id="@id/ground_truth_alt"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin"
