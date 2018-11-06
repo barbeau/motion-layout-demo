@@ -44,13 +44,9 @@
             android:id="@id/ground_truth_lat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/top_margin"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@id/set_ground_truth2"></Constraint>
-        <Constraint
-            android:id="@id/ground_truth_lat_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Constraint>
         <Constraint
             android:id="@id/ground_truth_long"
             android:layout_width="match_parent"
@@ -59,21 +55,12 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@id/ground_truth_lat"></Constraint>
         <Constraint
-            android:id="@id/ground_truth_long_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"></Constraint>
-        <Constraint
             android:id="@id/ground_truth_alt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@id/ground_truth_long"></Constraint>
-        <Constraint
-            android:id="@id/ground_truth_alt_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size"></Constraint>
         <Constraint
             android:id="@id/save"
             android:layout_width="wrap_content"
@@ -110,10 +97,6 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"></Constraint>
         <Constraint
-            android:id="@id/ground_truth_lat_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Constraint>
-        <Constraint
             android:id="@id/ground_truth_long"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
@@ -126,13 +109,6 @@
             motion:layout_constraintStart_toEndOf="@+id/ground_truth_lat"
             motion:layout_constraintTop_toTopOf="parent"></Constraint>
         <Constraint
-            android:id="@id/ground_truth_long_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:focusable="false"
-            android:textSize="@dimen/text_size"></Constraint>
-        <Constraint
             android:id="@id/ground_truth_alt"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="100dp"
@@ -142,13 +118,6 @@
             android:layout_marginRight="8dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintTop_toTopOf="parent"></Constraint>
-        <Constraint
-            android:id="@id/ground_truth_alt_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:focusable="false"
-            android:textSize="@dimen/text_size"></Constraint>
         <Constraint
             android:id="@id/save"
             android:layout_width="wrap_content"
