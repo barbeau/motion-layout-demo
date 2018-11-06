@@ -123,7 +123,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin"
-            android:text="@string/edit"
             motion:layout_constraintLeft_toLeftOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@id/ground_truth_alt"></Constraint>
