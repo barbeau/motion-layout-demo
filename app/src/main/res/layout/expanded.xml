@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/status_location_card"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expanded_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
     android:layout_marginLeft="@dimen/outer_card_margin"
     android:layout_marginStart="@dimen/outer_card_margin"
     android:layout_marginRight="@dimen/outer_card_margin"
@@ -57,7 +61,8 @@
                 android:hint="@string/ground_truth_latitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +81,8 @@
                 android:hint="@string/ground_truth_longitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +102,8 @@
                 android:hint="@string/ground_truth_altitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

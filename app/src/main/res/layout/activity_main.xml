@@ -20,6 +20,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/expanded" />
+    <include layout="@layout/motion_layout" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

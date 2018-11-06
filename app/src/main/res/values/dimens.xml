@@ -3,4 +3,7 @@
     <dimen name="inner_card_margin">16dp</dimen>
 
     <dimen name="top_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="text_size">12sp</dimen>
 </resources>
