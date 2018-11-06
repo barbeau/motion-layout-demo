@@ -41,7 +41,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ground_truth_lat"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -51,13 +51,14 @@
                 android:hint="@string/ground_truth_latitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ground_truth_long"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -67,13 +68,14 @@
                 android:hint="@string/ground_truth_longitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ground_truth_alt"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -83,7 +85,8 @@
                 android:hint="@string/ground_truth_altitude"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
