@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main"
     android:layout_marginLeft="@dimen/outer_card_margin"
     android:layout_marginStart="@dimen/outer_card_margin"
     android:layout_marginRight="@dimen/outer_card_margin"
