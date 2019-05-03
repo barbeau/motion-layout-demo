@@ -18,7 +18,7 @@
     <Transition
         motion:constraintSetStart="@+id/expanded"
         motion:constraintSetEnd="@+id/collapsed"
-        motion:duration="850"
+        motion:duration="250"
         motion:interpolator="linear">
         <OnClick
             motion:target="@id/save"
